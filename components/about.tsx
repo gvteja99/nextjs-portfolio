@@ -18,32 +18,26 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+        <p className="mb-3">
+            After graduating with a Bachelor's degree in{" "}
+            <span className="font-medium">Computer Science and Engineering</span>, I ventured into{" "}
+            <span className="font-medium">AI and web development</span>. With experience at Foundation AI,  
+            I've harnessed AI to dramatically streamline operations. These optimizations have empowered our 
+            clients with <span className="underline">significant time and resource savings</span>, 
+            catalyzing their firm's growth. My technical skills span{" "}
+            <span className="font-medium">
+                React, NextJS, NodeJS, Flask
+            </span>, and databases like <span className="font-medium">
+                MongoDB, and PostgreSQL
+            </span>
+            , complemented by proficiency in{" "}
+            <span className="italic">ML frameworks like <span className="font-medium">PyTorch and TensorFlow</span></span>. Having recently achieved a Master's degree in Computer Science from San Jose State University, I'm now actively seeking full-time roles where I can further apply and expand my expertise.
+        </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+        <p>
+            <span className="italic">Outside of work</span>, I'm an avid movie watcher, having enjoyed over 1000 films, and a keen book reader. I also spend time{" "}
+            <span className="font-medium">exploring tech forums</span>, always eager to expand my knowledge and perspective.
+        </p>
     </motion.section>
   );
 }

@@ -1,10 +1,15 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+// import corpcommentImg from "@/public/corpcomment.jpg";
+// import rmtdevImg from "@/public/rmtdev.png";
+// import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import stackOverflowClone from "@/public/stackOverflowClone.jpg";
+import uberEatsClone from "@/public/uberEatsClone.jpg";
+import etsyClone from "@/public/etsyClone.jpg";
+
 
 export const links = [
   {
@@ -35,73 +40,91 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "SWE Intern (WinC IT Services)",
+    location: "Hyderabad, Telangana, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I developed and maintained a secure cashier interface system for retail stores, streamlining billing and product search functionalities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2018",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Graduated with a Bachelors Degree",
+    location: "Gurgaon, Haryana, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I graduated with a B.Tech. in Computer Science from BML Munjal University, where my final project focused on glaucoma detection using image classification.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020",
   },
+  {
+    title: "Software Engineer (Foundation AI)",
+    location: "Hyderabad, Telangana, India",
+    description:
+      "I pioneered many AI-enhanced solutions, from deploying security systems for COVID-19 contact tracing to automating processes, saving clients substantial time and resources.",
+    icon: React.createElement(FaPython),
+    date: "2020 - 2021",
+  },
+  {
+    title: "Graduated with a Masters Degree",
+    location: "San Jose, CA",
+    description:
+      "I earned my M.S. in Computer Science from San Jose State University with a GPA of 3.88. For my standout project, I delved into image captioning using Reinforcement Learning, merging visual processing with cutting-edge AI techniques.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021 - 2023",
+  },
+  {
+    title: "Software Engineer (Agrim Technologies)",
+    location: "San Jose, CA",
+    description:
+      "I started at Agrim Technologies as an intern, moved to a co-op, and am now a full-time software engineer. During my tenure, I orchestrated the integration of various computer vision modules, streamlined workflows, and developed chatbots, driving efficiency and innovation.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - present",
+  },
+
+
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Stack Overflow Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I crafted a Stack Overflow-like prototype using Kafka and Redis, supporting user roles and secure token-based authentication.",
+    tags: ["React.js", "NodeJS", "Kafka", "Redis", "MongoDB"],
+    imageUrl: stackOverflowClone,
   },
   {
-    title: "rmtDev",
+    title: "Uber Eats Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Food delivery app akin to UberEATS with React, PostgreSQL, & GraphQL. It supports user profiles, order placement, and menu editing.",
+    tags: ["React", "Redux", "PostgreSQL", "GraphQL", "Tailwind"],
+    imageUrl: uberEatsClone,
   },
   {
-    title: "Word Analytics",
+    title: "Etsy Clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An Etsy-inspired app using Spring Boot and Redux. Features profile creation, product search, and purchasing. Scalability via microservices.",
+    tags: ["SpringBoot", "Redux", "MongoDB", "TypeScript", "MaterialUI"],
+    imageUrl: etsyClone,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Python",
+  "Java",
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
+  "NodeJS",
   "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
   "Django",
-  "Framer Motion",
+  "MongoDB",
+  "PostgreSQL",
+  "Docker",
+  "AWS",
+  "Kafka",
+  "ExpressJS",
+  "PyTorch",
+  "TensorFlow",
+  "Git",
+  "Linux",
 ] as const;
