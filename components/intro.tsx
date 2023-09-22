@@ -8,12 +8,14 @@ import { BsArrowDown, BsLinkedin } from "react-icons/bs";
 import { FaFile, FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import profilePictureImg from "@/public/profilePictureImg.png";
+import profilePictureImg from "public/profilePictureImg.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const RESUME_LINK = process.env.RESUME_LINK
+  
   return (
     <section
       ref={ref}
@@ -88,9 +90,9 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href={process.env.RESUME_LINK}
-          download
+          className="group bg-white px-7 py-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href={RESUME_LINK}
+          target="_blank"
         >
           Resume{" "}
           <FaFile />

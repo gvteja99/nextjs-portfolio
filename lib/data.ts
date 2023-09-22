@@ -6,9 +6,9 @@ import { LuGraduationCap } from "react-icons/lu";
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
-import stackOverflowClone from "@/public/stackOverflowClone.jpg";
-import uberEatsClone from "@/public/uberEatsClone.jpg";
-import etsyClone from "@/public/etsyClone.jpg";
+import stackOverflowClone from "public/stackOverflowClone.jpg";
+import uberEatsClone from "public/uberEatsClone.jpg";
+import etsyClone from "public/etsyClone.jpg";
 
 
 export const links = [
