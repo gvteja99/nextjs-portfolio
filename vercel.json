@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://venkatgolamaru.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
