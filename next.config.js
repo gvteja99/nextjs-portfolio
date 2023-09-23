@@ -1,8 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports = {
   experimental: {
     serverActions: true,
-  }
-};
+  },
 
-module.exports = nextConfig;
+  async redirects() {
+    return [
+      {
+        source: '/(.*)',
+        destination: 'https://venkatgolamaru.vercel.app/$1',
+        permanent: true,
+      },
+    ];
+  },
+};
